@@ -1,0 +1,37 @@
+body{/*erases margin and colors background of body*/
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1{/*sets headings parameters*/
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+p{/*sets paragraphs parameters*/
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.inside_txt{ /*puts a margin to al text inside the cards*/
+    margin: 20px;
+}
+
+#container {/*grid container settings*/
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 400px;
+}
+
+#sedans{/*card 1 settings*/
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvs{/*card 2 settings*/
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury{/*card 3 settings*/
+    background-color: hsl(179, 100%, 13%);
+}
