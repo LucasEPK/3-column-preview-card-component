@@ -48,6 +48,7 @@ button{
     grid-template-rows: 500px;
     grid-template-columns: 310px 310px 310px;
 
+    
     /*centers container in body*/
     justify-content: center;
     align-content: center;
