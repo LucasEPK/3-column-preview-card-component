@@ -6,25 +6,67 @@ body{/*erases margin and colors background of body*/
 h1{/*sets headings parameters*/
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
+
+    font-size: 40px;
+    margin: 40px 50px 40px 50px;
 }
 
 p{/*sets paragraphs parameters*/
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
+
+    margin: 0 50px 80px 50px;
 }
 
-.inside_txt{ /*puts a margin to al text inside the cards*/
-    margin: 20px;
+img{
+    margin: 50px 50px 0 50px;
+}
+
+button{
+    margin: 0 50px 0 50px;
+
+    /*customizes button and erases default button options*/
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 15px 32px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+
+    /*rounds corners*/
+    border-radius: 30px;
+    transition-duration: 0.4s;
 }
 
 #container {/*grid container settings*/
+    height: 100vh;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 400px;
+    grid-template-rows: 500px;
+    grid-template-columns: 310px 310px 310px;
+
+    /*centers container in body*/
+    justify-content: center;
+    align-content: center;
 }
 
 #sedans{/*card 1 settings*/
+    background-color: hsl(31, 77%, 52%);
+
+    border-radius: 10px 0 0 10px;
+}
+
+#sedans button{
+    border: 2px solid hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+#sedans button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(31, 77%, 52%);
 }
 
@@ -32,6 +74,30 @@ p{/*sets paragraphs parameters*/
     background-color: hsl(184, 100%, 22%);
 }
 
+#suvs button{
+    border: 2px solid hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+#suvs button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
 #luxury{/*card 3 settings*/
+    background-color: hsl(179, 100%, 13%);
+
+    border-radius: 0 10px 10px 0;
+}
+
+#luxury button{
+    border: 2px solid hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(179, 100%, 13%);
 }
