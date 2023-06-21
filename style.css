@@ -16,7 +16,9 @@ p{/*sets paragraphs parameters*/
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
 
-    margin: 0 50px 80px 50px;
+    margin: 0 50px 60px 50px;
+
+    line-height: 1.6; /*makes text line more separated*/
 }
 
 img{
@@ -42,14 +44,15 @@ button{
     transition-duration: 0.4s;
 }
 
-#container {/*grid container settings*/
-    height: 100vh;
+#container {
+    /*makes container a grid with 1 row and 3 columns*/
     display: grid;
     grid-template-rows: 500px;
     grid-template-columns: 310px 310px 310px;
 
-    
+
     /*centers container in body*/
+    height: 100vh;
     justify-content: center;
     align-content: center;
 }
@@ -88,7 +91,6 @@ button{
 
 #luxury{/*card 3 settings*/
     background-color: hsl(179, 100%, 13%);
-
     border-radius: 0 10px 10px 0;
 }
 
@@ -101,4 +103,35 @@ button{
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(179, 100%, 13%);
+}
+
+/*--------------------------------------------mobile design---------------------------------------------*/
+
+@media(max-width: 800px){
+    #container{
+        /*adjusted method of centering because it bugged with 100vh*/
+        margin: 90px 0 90px 0;
+        height: auto;
+        align-content: stretch;
+
+        /*Changed grid to have 3 rows and 1 column*/
+        grid-template-rows: 450px 450px 450px;
+        grid-template-columns: 330px;
+    }
+
+    #sedans{/*top borders become round*/
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury{/*bottom borders become round*/
+        border-radius: 0 0 10px 10px;
+    }
+
+    h1{ /*adjusted margin*/
+        margin: 30px 50px 30px 50px;
+    }
+
+    p{ /*adjusted margin*/
+        margin: 0 50px 20px 50px;
+    }
 }
